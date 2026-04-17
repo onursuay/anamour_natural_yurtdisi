@@ -39,6 +39,23 @@
   .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
   body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fffcf7; color: #383835; }
 </style>
+<style>
+  a.from-primary.to-primary-container { position: relative; overflow: hidden; isolation: isolate; }
+  a.from-primary.to-primary-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,0.55) 50%, transparent 70%);
+    transform: translateX(-120%);
+    animation: btn-shine-sweep 2.6s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 1;
+  }
+  @keyframes btn-shine-sweep {
+    0% { transform: translateX(-120%); }
+    60%, 100% { transform: translateX(120%); }
+  }
+</style>
 </head>
 <body class="bg-background text-on-surface">
 
