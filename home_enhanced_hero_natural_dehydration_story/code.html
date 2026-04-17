@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#0e0e0c",
+                    "on-secondary-fixed-variant": "#29664c",
+                    "on-primary-container": "#4c0021",
+                    "on-primary": "#ffffff",
+                    "outline-variant": "#bbb9b4",
+                    "secondary-container": "#b1f0ce",
+                    "inverse-primary": "#fe4c8d",
+                    "on-secondary": "#ffffff",
+                    "background": "#fffcf7",
+                    "primary-fixed-dim": "#ff5290",
+                    "error-container": "#f74b6d",
+                    "surface-container-high": "#f0eee8",
+                    "primary": "#c11661",
+                    "primary-dim": "#af0055",
+                    "on-surface-variant": "#656461",
+                    "on-tertiary-fixed-variant": "#623740",
+                    "on-background": "#383835",
+                    "on-tertiary": "#ffffff",
+                    "primary-container": "#ff709e",
+                    "surface-container-low": "#fcf9f4",
+                    "tertiary-fixed": "#eaaeb9",
+                    "on-secondary-fixed": "#014931",
+                    "on-primary-fixed": "#000000",
+                    "on-error-container": "#510017",
+                    "outline": "#82807c",
+                    "inverse-on-surface": "#9e9d98",
+                    "on-primary-fixed-variant": "#5d002a",
+                    "tertiary-fixed-dim": "#dca1ac",
+                    "tertiary-container": "#eaaeb9",
+                    "surface-bright": "#fffcf7",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-dim": "#256348",
+                    "error-dim": "#a70138",
+                    "secondary": "#336f54",
+                    "surface-container": "#f6f3ee",
+                    "surface-variant": "#eae8e2",
+                    "surface-container-highest": "#eae8e2",
+                    "surface-dim": "#e5e2dc",
+                    "tertiary": "#875760",
+                    "on-secondary-container": "#1d5c42",
+                    "on-tertiary-fixed": "#3f1922",
+                    "secondary-fixed": "#b1f0ce",
+                    "on-error": "#ffffff",
+                    "surface": "#fffcf7",
+                    "on-tertiary-container": "#582e37",
+                    "tertiary-dim": "#7a4b55",
+                    "secondary-fixed-dim": "#a3e2c0",
+                    "on-surface": "#383835",
+                    "surface-tint": "#c11661",
+                    "primary-fixed": "#ff709e",
+                    "error": "#c12048"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-shadow-sm {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl transition-all duration-300">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<img alt="Anamour Natural" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0uilBbYWocVNwwoxdA3H42MfsvYLpZ1pnKugYtmx5wbbOqrO97mk2LyCsCNkZUDtpdQCLyWc-QPSA0VN6712VkAra7QpA3xVVDdR9BrrNEPkgpuOZeUiNlTsdHrRcSb-t_E5HH6a7N6JBGWcTGbHucJKIStJEqlhiVsI6NcOI9mCakAjOy2kMtazsbFVG5FNtD5G3zWwA_AREKTJSk6fLmTsweKh5PgUrS_3quXkJRKo96b10WDwG0gndCs1jxX9tK4MGrz6CkVIRfQ"/>
+</div>
+<div class="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] text-sm tracking-widest uppercase font-semibold">
+<a class="text-zinc-600 hover:text-pink-500 transition-all duration-300" href="#">Story</a>
+<a class="text-pink-600 border-b-2 border-pink-600 transition-all duration-300" href="#collection">Collection</a>
+<a class="text-zinc-600 hover:text-pink-500 transition-all duration-300" href="#contact">Contact</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-full font-semibold shadow-lg hover:opacity-90 active:scale-95 transition-all">
+                Shop Now
+            </button>
+</div>
+</nav>
+<!-- Side Navigation (Mobile/Tablet) -->
+<aside class="fixed left-0 top-0 h-screen w-64 z-40 hidden md:flex flex-col p-6 bg-[#fcf9f4] rounded-r-3xl shadow-2xl translate-x-[-100%] hover:translate-x-0 transition-transform duration-500 group">
+<div class="mb-10">
+<img alt="Anamour Natural Logo" class="w-24 h-auto object-contain mb-4" src="https://lh3.googleusercontent.com/aida/ADBb0uilBbYWocVNwwoxdA3H42MfsvYLpZ1pnKugYtmx5wbbOqrO97mk2LyCsCNkZUDtpdQCLyWc-QPSA0VN6712VkAra7QpA3xVVDdR9BrrNEPkgpuOZeUiNlTsdHrRcSb-t_E5HH6a7N6JBGWcTGbHucJKIStJEqlhiVsI6NcOI9mCakAjOy2kMtazsbFVG5FNtD5G3zWwA_AREKTJSk6fLmTsweKh5PgUrS_3quXkJRKo96b10WDwG0gndCs1jxX9tK4MGrz6CkVIRfQ"/>
+<p class="text-xs text-on-surface-variant font-medium">The Botanical Curated</p>
+</div>
+<div class="flex flex-col gap-2">
+<a class="flex items-center gap-3 p-3 text-zinc-500 hover:bg-zinc-100 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="eco">eco</span>
+<span class="font-medium">Home</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-zinc-500 hover:bg-zinc-100 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-medium">Our Story</span>
+</a>
+<a class="flex items-center gap-3 p-3 bg-pink-50 text-pink-700 rounded-xl transition-all" href="#collection">
+<span class="material-symbols-outlined" data-icon="auto_awesome" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-medium">Collection</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-zinc-500 hover:bg-zinc-100 rounded-xl transition-all" href="#contact">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="font-medium">Get in Touch</span>
+</a>
+</div>
+<div class="mt-auto">
+<button class="w-full py-3 bg-secondary text-on-secondary rounded-xl font-bold shadow-md hover:bg-on-secondary-container transition-colors">
+                Request Info
+            </button>
+</div>
+</aside>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Anamour Natural premium dried fruit product assortment" class="w-full h-full object-cover" data-alt="Composite visual of premium dried fruits including persimmon, apple, dragon fruit, orange, and strawberry" src="https://lh3.googleusercontent.com/aida/ADBb0uhWFhWocitQ3BGvRZ5y_1fb2lWjS-xTUcYGEfZk464H1NkDa4uCX2gEx1NXqBrJXVDSY9BvlFytJqRwaJOnCNyPFm2KrrSVeuXoAYB22mc3djuEHjrMlbPfh8sVW5cGgkib08i2qeU29lElTkn69t2OPEGp_ZI1W5XiYqnviGER_tKWaaF2pz-xoEV0Kz7UV9HYVN99pJk31qm3pk3XKRjc0jICduZL9CgU2BfiiFxXm4BHPQd-XdxbpCBKf3PAWCdx7Quyj9Vx7W8"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<img alt="Anamour Natural" class="h-12 w-auto drop-shadow-sm" src="https://lh3.googleusercontent.com/aida/ADBb0uilBbYWocVNwwoxdA3H42MfsvYLpZ1pnKugYtmx5wbbOqrO97mk2LyCsCNkZUDtpdQCLyWc-QPSA0VN6712VkAra7QpA3xVVDdR9BrrNEPkgpuOZeUiNlTsdHrRcSb-t_E5HH6a7N6JBGWcTGbHucJKIStJEqlhiVsI6NcOI9mCakAjOy2kMtazsbFVG5FNtD5G3zWwA_AREKTJSk6fLmTsweKh5PgUrS_3quXkJRKo96b10WDwG0gndCs1jxX9tK4MGrz6CkVIRfQ"/>
+<h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter text-on-background leading-tight">
+                        Nature’s <span class="text-primary">Soul</span>, <br/>Purely Dried.
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-lg leading-relaxed font-medium">
+                        Crafting the finest botanical experience through traditional slow-drying methods. Preserving every nutrient, every color, and every burst of sun-drenched flavor.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="px-8 py-4 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-full font-bold text-lg shadow-2xl hover:scale-105 transition-transform">
+                            Explore Collection
+                        </button>
+<button class="px-8 py-4 bg-surface-container-highest text-on-surface rounded-full font-bold text-lg hover:bg-surface-variant transition-colors">
+                            Our Process
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Collection Section (Bento Grid) -->
+<section class="py-24 bg-surface-container-low" id="collection">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<span class="text-primary font-bold tracking-[0.2em] uppercase text-sm">Curation 2024</span>
+<h2 class="text-5xl font-extrabold tracking-tight mt-2">The Dried Fruit <span class="text-secondary italic">Anthology</span></h2>
+</div>
+<p class="text-on-surface-variant max-w-md font-medium">
+                        Each slice is a concentrated essence of the harvest, hand-selected at peak ripeness and dried with meticulous care.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[900px]">
+<!-- Dragon Fruit (Main Focus) -->
+<div class="md:col-span-8 md:row-span-2 group relative overflow-hidden rounded-[2rem] bg-white">
+<img alt="Dried Dragon Fruit" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Artistic arrangement of vibrant pink dried dragon fruit slices with visible black seeds on a minimalist light stone surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLus6gZ28YNtYLBSnsR-xbTIZzAsJ5gS5wR748LPXzGapqxGyJZMi0ukN0teykvsuKTTlgoWaHvgrevbpBzUD74beOnLrEGsi1J206_9dyp_uAltj0RAB_oleu8sY0iKQ744_wz0m0vDsz_3ZSlGTfgfjA77pam6fz-576GyvLHB6oxQlnVj_SRxaufU9KC8HzHFixXirUirQHdmq5chmcaYS5XF7HEGF-3JnBFsDVAmpOCClaC7q2RwFwqx601iu6wKZQWqugK9uu"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="absolute bottom-8 left-8 text-white">
+<h3 class="text-3xl font-bold mb-1">Dragon Fruit</h3>
+<p class="text-white/80 font-medium">Exotic &amp; Vibrant</p>
+</div>
+<div class="absolute top-6 right-6 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-white font-bold text-sm">Signature</div>
+</div>
+<!-- Persimmon -->
+<div class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-[2rem] bg-white">
+<img alt="Dried Persimmon" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uiNxGO_gSWFz5vexN28kw5RhYWgM1SEGNBJhvARdFYsWsDAfW6Hv6sTA1XCXTwf-mDJqFVzZfOYWPBAJx8Py2wH6m-sR0PtirApI0Y6HJpj47_gOcuib3eAWii3OYu1O6bp8Pvz1WiiFjH9XZWqt0y2dD9qakvsf7k9Ikm_u6u8Nv780kgqVSLeXeZ01ymyxX_mZN8YUbJmfxUSZeZOkWqHAosrQhDlcCfIYrI9-9U22KpZ1MI9usm1TrNfgB5lTHaz2nh9kIH94A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<h3 class="text-2xl font-bold">Persimmon</h3>
+<p class="text-sm opacity-90">Rich &amp; Sweet</p>
+</div>
+</div>
+<!-- Strawberry -->
+<div class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-[2rem] bg-white">
+<img alt="Dried Strawberry" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0ujy-lfQXtPuuqWk1fzHYKdXHQTJY6kaepZVZYN7ycUkrK8X2ZSVATvnYw3T6UJ-PgLR1lpvj2IhXougn_vwFDd7GtPB7x_NnbXl2NFmJAzvQBX0o8ZAuOmljlCTA_QdoI6N6c7ISGD3cmMZ4a6jn8tPrGVZ_R4HnFx9cx56sect6Ox81MfETb4SYUAMzxKWeyr9Qa20DuCJlREC_V6ketfENhMyUKKQBee3zdlpnF62T6H35UvteK2lVS5JmX4D8tohaOG0lEZc32I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white text-shadow-sm">
+<h3 class="text-2xl font-bold">Strawberry</h3>
+<p class="text-sm">Summer Intensity</p>
+</div>
+</div>
+<!-- Apple -->
+<div class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-[2rem] bg-white">
+<img alt="Dried Apple" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uidGh57AsJ2xlhK5uEif9oOheddzzvt00GyICTxIdyjocmMD1rQ2VNW9MTVgyiCvlN_7KNPugBxGnKnIJawsZ5jonggab_6UEwJFZ7jsIvnOLHv3RV4W_T5S-BB9xZPbMMMN3Q6nhcj37qK4jwKWuzthwOSUp-wgpINIOWHh6JmCBaiNjg3VURnQXsax3qbA9Kg27irbaA9yJ09fawPeD7xeIlAGcMC6u91AFMuq6f4goNRGRHI8SU0FNJWxTZvhCdK0dCIOK2j6VU"/>
+<div class="absolute bottom-6 left-6 text-on-surface">
+<h3 class="text-2xl font-bold">Apple</h3>
+<p class="text-sm text-on-surface-variant font-medium">Pure Simplicity</p>
+</div>
+</div>
+<!-- Orange -->
+<div class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-[2rem] bg-white">
+<img alt="Dried Orange" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0ujfEz0x9pELCHxjyHhU0uY0_kugrOC2l4NsSjF6FwGArYaaVBYjf1MQKmohVZnAywkundW7MviTlCWRNa-5sTemJDg_7MX6DibPVRHhIisz2sPFm1FZiPaCS895RSAXva7qoH6KE6k-vXZXq3uCiFuqhuEQ47PDWtVMqXdaJgDZAm03kCA-eShneqaL41j5HaHokAPUkLBTgC0u0YIutdmAhaVq1XmP8eTZYORVt1HQ-Shg4qjqs88lpCzMnlOawF1HRYCAwMLezEE"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-secondary/40 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<h3 class="text-2xl font-bold">Orange</h3>
+<p class="text-sm opacity-90">With &amp; Without Peel</p>
+</div>
+</div>
+<!-- Large Asymmetric Organic Element -->
+<div class="md:col-span-4 md:row-span-1 flex items-center justify-center p-8 bg-surface-container rounded-[2rem]">
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-5xl mb-4" data-icon="temp_preferences_custom">temp_preferences_custom</span>
+<h4 class="text-xl font-bold">Custom Bundles</h4>
+<p class="text-sm text-on-surface-variant mt-2 font-medium">Mix your favorites for a curated taste experience.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Process Section -->
+<section class="py-24 bg-white relative overflow-hidden">
+<div class="absolute -right-20 top-0 opacity-10">
+<span class="material-symbols-outlined text-[30rem]" data-icon="sunny">sunny</span>
+</div>
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="rounded-[3rem] overflow-hidden shadow-2xl">
+<img alt="Artisanal sun-drying of fruit slices on circular wooden trays" class="w-full aspect-square object-cover" data-alt="Vibrant sun-dried persimmon, apple, strawberry, and dragon fruit slices arranged on circular wooden trays on a stone terrace in a Mediterranean orchard." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf2IDsHgCSypoxBLL5cccyM5v4yZBrBqxnXV8w7jedsm3nY1YS2VgYOoEVzP-J3chbYbA4y50qDFEd2DKAiWlex79gM2Mhi1HefJyEfx8xdOMHBFIpw1vRYjs4oESfkNJmss8U3uKS8M5R4SGZNCYvIX4aUopN1KkmIasFJLXzH9xinHSXtZUCbvFHmhDaFJfYEpblJd9KaqtmM1caniY5IfJNT4Adlbspto4xUFlcdVsXKmQMs4Czug_AgdSqRdlq0koCDHqdBs54"/>
+</div>
+<!-- Organic Overlay -->
+<div class="absolute -bottom-8 -right-8 w-48 h-48 bg-primary p-4 rounded-3xl shadow-xl flex flex-col justify-center items-center text-on-primary text-center hidden md:flex">
+<span class="text-4xl font-black">100%</span>
+<span class="text-xs font-bold uppercase tracking-widest mt-2">Natural <br/>Synergy</span>
+</div>
+</div>
+<div class="space-y-6">
+<span class="text-secondary font-bold tracking-[0.2em] uppercase text-sm">Traditional Wisdom</span>
+<h2 class="text-5xl font-extrabold tracking-tight">The Mastery of <br/><span class="text-primary">Natural Sun-Drying</span></h2>
+<div class="space-y-4 text-lg text-on-surface-variant leading-relaxed font-medium">
+<p>We honor the ancient tradition of natural sun-drying, allowing the warmth of the sun and gentle breezes to naturally preserve our carefully harvested fruits without the use of artificial additives, sulfites, or added sugars.</p>
+<p>This patient, time-honored method slowly draws out moisture while locking in the fruit's vibrant colors, essential nutrients, and concentrated natural sweetness, ensuring every bite is as pure as nature intended.</p>
+</div>
+<div class="grid grid-cols-2 gap-6 pt-6">
+<div class="flex flex-col gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="nest_eco_leaf" style="font-variation-settings: 'FILL' 1;">nest_eco_leaf</span>
+<h4 class="font-bold">Zero Additives</h4>
+<p class="text-sm text-on-surface-variant">No artificial preservatives or added sugars.</p>
+</div>
+<div class="flex flex-col gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="nutrition" style="font-variation-settings: 'FILL' 1;">nutrition</span>
+<h4 class="font-bold">Naturally Preserved</h4>
+<p class="text-sm text-on-surface-variant">Vitamins locked in by the gentle sun.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Lead Gen Section -->
+<section class="py-24 bg-surface-container-high" id="contact">
+<div class="max-w-7xl mx-auto px-8">
+<div class="bg-surface-container-lowest rounded-[3rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+<div class="lg:w-1/2 p-12 lg:p-20 bg-inverse-surface text-white">
+<h2 class="text-5xl font-extrabold tracking-tight mb-6">Let’s Grow <br/>Together.</h2>
+<p class="text-zinc-400 text-xl font-medium mb-12">Whether you are a retail partner or a fruit enthusiast, we’d love to hear from you.</p>
+<div class="space-y-8">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+</div>
+<div>
+<p class="text-sm text-zinc-500 uppercase tracking-widest font-bold">Visit Us</p>
+<p class="font-semibold">Botanical Garden Ave, Istanbul</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="call">call</span>
+</div>
+<div>
+<p class="text-sm text-zinc-500 uppercase tracking-widest font-bold">Call Us</p>
+<p class="font-semibold">+90 (555) 123 45 67</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 p-12 lg:p-20">
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-bold uppercase tracking-widest text-on-surface-variant mb-2">Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-2xl py-4 px-6 focus:ring-2 focus:ring-primary/40 transition-all placeholder:text-zinc-400" placeholder="Your Full Name" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-bold uppercase tracking-widest text-on-surface-variant mb-2">Email</label>
+<input class="w-full bg-surface-container-low border-none rounded-2xl py-4 px-6 focus:ring-2 focus:ring-primary/40 transition-all placeholder:text-zinc-400" placeholder="hello@example.com" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-bold uppercase tracking-widest text-on-surface-variant mb-2">Message</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-2xl py-4 px-6 focus:ring-2 focus:ring-primary/40 transition-all placeholder:text-zinc-400" placeholder="Tell us what you're looking for..." rows="4"></textarea>
+</div>
+<button class="w-full py-5 bg-primary text-on-primary rounded-full font-bold text-lg shadow-xl shadow-primary/20 hover:bg-primary-dim active:scale-[0.98] transition-all">
+                                Send Inquiry
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-[#f6f3ee] rounded-t-[3rem] px-8 py-16 flex flex-col items-center gap-8">
+<div class="flex flex-col items-center gap-4 text-center">
+<img alt="Anamour Natural" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0uilBbYWocVNwwoxdA3H42MfsvYLpZ1pnKugYtmx5wbbOqrO97mk2LyCsCNkZUDtpdQCLyWc-QPSA0VN6712VkAra7QpA3xVVDdR9BrrNEPkgpuOZeUiNlTsdHrRcSb-t_E5HH6a7N6JBGWcTGbHucJKIStJEqlhiVsI6NcOI9mCakAjOy2kMtazsbFVG5FNtD5G3zWwA_AREKTJSk6fLmTsweKh5PgUrS_3quXkJRKo96b10WDwG0gndCs1jxX9tK4MGrz6CkVIRfQ"/>
+<p class="text-zinc-500 font-medium max-w-sm mt-2">From the heart of the orchard to your daily ritual. Sustainable, seasonal, and always pure.</p>
+</div>
+<div class="flex gap-8 font-['Plus_Jakarta_Sans'] text-body-sm">
+<a class="text-zinc-500 hover:text-emerald-500 transition-opacity opacity-70" href="#">Privacy Policy</a>
+<a class="text-zinc-500 hover:text-emerald-500 transition-opacity opacity-70" href="#">Terms of Service</a>
+<a class="text-zinc-500 hover:text-emerald-500 transition-opacity opacity-70" href="#">Sustainability Report</a>
+</div>
+<div class="pt-8 border-t border-zinc-200 w-full max-w-4xl text-center">
+<p class="text-on-secondary-fixed-variant text-sm font-medium">© 2024 Anamour Natural. Grown with Intention.</p>
+</div>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-8 right-8 z-50 w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center text-white shadow-2xl hover:scale-110 active:scale-95 transition-all group overflow-hidden" href="https://wa.me/905327998919">
+<div class="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<svg fill="currentColor" height="32" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.852c1.856 1.084 3.809 1.654 5.783 1.655 5.737 0 10.403-4.666 10.406-10.403.001-2.78-1.082-5.393-3.048-7.36s-4.579-3.05-7.36-3.051c-5.738 0-10.406 4.666-10.409 10.404-.001 1.905.525 3.763 1.522 5.356l-.994 3.63 3.73-.978zm11.567-5.28c-.313-.158-1.854-.915-2.141-1.018-.287-.104-.497-.158-.707.158s-.812 1.018-.994 1.228-.365.237-.678.079c-.313-.158-1.322-.487-2.52-1.555-.93-.83-1.558-1.855-1.74-2.17-.182-.315-.02-.485.137-.642.142-.141.313-.366.47-.55.157-.183.209-.314.313-.524s.052-.393-.026-.55c-.079-.158-.707-1.703-.968-2.333-.254-.614-.512-.531-.707-.541-.183-.009-.391-.011-.599-.011s-.548.078-.836.393c-.287.315-1.096 1.074-1.096 2.62s1.122 3.039 1.279 3.248c.157.21 2.207 3.37 5.348 4.726.748.323 1.332.516 1.787.66.752.239 1.435.205 1.975.125.602-.09 1.854-.758 2.115-1.468.261-.709.261-1.314.183-1.442-.079-.128-.288-.204-.601-.362z"></path></svg>
+</a>
+</body></html>
