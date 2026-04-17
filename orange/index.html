@@ -105,17 +105,55 @@
 <body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
 
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#fffcf7]/70 backdrop-blur-xl">
-  <div class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
-    <a href="/" class="text-2xl font-bold tracking-tighter text-[#383835]">Anamour Natural</a>
-    <div class="hidden md:flex gap-8 items-center font-['Plus_Jakarta_Sans'] tracking-wide uppercase text-xs font-semibold">
-      <a class="text-[#656461] hover:text-[#383835] transition-all duration-300" href="/#story">Story</a>
-      <a class="text-[#c11661] border-b-2 border-[#c11661] pb-1" href="/#collection">Collection</a>
-      <a class="text-[#656461] hover:text-[#383835] transition-all duration-300" href="/#contact">Contact</a>
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl transition-all duration-300">
+  <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+    <a href="/" class="flex-shrink-0">
+      <img alt="Anamour Natural" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0uilBbYWocVNwwoxdA3H42MfsvYLpZ1pnKugYtmx5wbbOqrO97mk2LyCsCNkZUDtpdQCLyWc-QPSA0VN6712VkAra7QpA3xVVDdR9BrrNEPkgpuOZeUiNlTsdHrRcSb-t_E5HH6a7N6JBGWcTGbHucJKIStJEqlhiVsI6NcOI9mCakAjOy2kMtazsbFVG5FNtD5G3zWwA_AREKTJSk6fLmTsweKh5PgUrS_3quXkJRKo96b10WDwG0gndCs1jxX9tK4MGrz6CkVIRfQ"/>
+    </a>
+    <div class="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] text-xs tracking-widest uppercase font-semibold">
+      <a class="text-zinc-600 hover:text-pink-500 transition-all duration-300" href="/">Home</a>
+      <a class="text-pink-600 border-b-2 border-pink-600 pb-0.5 transition-all duration-300" href="/products/">Products</a>
+      <div class="relative group">
+        <button class="text-zinc-600 hover:text-pink-500 transition-all duration-300 flex items-center gap-0.5 text-xs tracking-widest uppercase font-semibold">
+          Corporate <span class="material-symbols-outlined" style="font-size:14px;vertical-align:-2px;">expand_more</span>
+        </button>
+        <div class="absolute top-full -left-2 mt-3 w-52 bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <a href="/about/" class="block px-4 py-3 rounded-xl text-xs font-semibold tracking-wide uppercase text-zinc-600 hover:bg-pink-50 hover:text-pink-600 transition-colors">About Us</a>
+          <a href="/privacy-policy/" class="block px-4 py-3 rounded-xl text-xs font-semibold tracking-wide uppercase text-zinc-600 hover:bg-pink-50 hover:text-pink-600 transition-colors">Privacy Policy</a>
+          <a href="/cookie-policy/" class="block px-4 py-3 rounded-xl text-xs font-semibold tracking-wide uppercase text-zinc-600 hover:bg-pink-50 hover:text-pink-600 transition-colors">Cookie Policy</a>
+        </div>
+      </div>
+      <a class="text-zinc-600 hover:text-pink-500 transition-all duration-300" href="/#contact">Contact</a>
     </div>
-    <div class="flex items-center gap-6">
-      <button class="material-symbols-outlined text-[#383835] hover:opacity-80 transition-transform scale-95 active:scale-100">shopping_cart</button>
-      <a href="/#collection" class="hidden md:block bg-[#c11661] text-white px-6 py-2 rounded-full font-['Plus_Jakarta_Sans'] tracking-wide uppercase text-xs font-semibold hover:opacity-80 transition-all duration-300">Shop Now</a>
+    <div class="flex items-center gap-3">
+      <a href="/#contact" class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-full font-semibold shadow-lg hover:opacity-90 active:scale-95 transition-all text-xs tracking-wider uppercase">
+        Sipariş Ver
+      </a>
+      <button class="md:hidden p-2 text-zinc-600 hover:text-pink-500 transition-colors" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+  <div class="hidden md:hidden bg-white/95 backdrop-blur-xl border-t border-zinc-100" id="mobile-menu">
+    <div class="px-8 py-6 flex flex-col gap-1 max-w-7xl mx-auto">
+      <a class="py-3 px-4 rounded-xl text-xs font-semibold tracking-widest uppercase text-zinc-600 hover:bg-pink-50 hover:text-pink-600 transition-colors" href="/">Home</a>
+      <a class="py-3 px-4 rounded-xl text-xs font-semibold tracking-widest uppercase text-pink-600 bg-pink-50" href="/products/">Products</a>
+      <div>
+        <button class="w-full text-left py-3 px-4 rounded-xl text-xs font-semibold tracking-widest uppercase text-zinc-600 hover:bg-pink-50 hover:text-pink-600 transition-colors flex items-center justify-between" onclick="document.getElementById('corp-submenu').classList.toggle('hidden')">
+          Corporate <span class="material-symbols-outlined" style="font-size:16px;">expand_more</span>
+        </button>
+        <div class="hidden pl-4" id="corp-submenu">
+          <a class="block py-2 px-4 rounded-xl text-xs font-semibold tracking-wide uppercase text-zinc-500 hover:text-pink-600 transition-colors" href="/about/">About Us</a>
+          <a class="block py-2 px-4 rounded-xl text-xs font-semibold tracking-wide uppercase text-zinc-500 hover:text-pink-600 transition-colors" href="/privacy-policy/">Privacy Policy</a>
+          <a class="block py-2 px-4 rounded-xl text-xs font-semibold tracking-wide uppercase text-zinc-500 hover:text-pink-600 transition-colors" href="/cookie-policy/">Cookie Policy</a>
+        </div>
+      </div>
+      <a class="py-3 px-4 rounded-xl text-xs font-semibold tracking-widest uppercase text-zinc-600 hover:bg-pink-50 hover:text-pink-600 transition-colors" href="/#contact">Contact</a>
+      <div class="pt-4 mt-2 border-t border-zinc-100">
+        <a href="/#contact" class="block w-full text-center bg-gradient-to-br from-primary to-primary-container text-on-primary py-3 rounded-full font-semibold hover:opacity-90 transition-all text-xs tracking-wider uppercase">
+          Sipariş Ver
+        </a>
+      </div>
     </div>
   </div>
 </nav>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Anamour Natural</title>
+<meta name="description" content="We set out with the dream of producing inspiring flavors for tables by bringing together the purest form of nature with women's craftsmanship."/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary": "#c11661", "primary-dim": "#af0055", "primary-container": "#ff709e",
+          "on-primary": "#ffffff", "secondary": "#336f54", "secondary-container": "#b1f0ce",
+          "on-secondary": "#ffffff", "on-secondary-container": "#1d5c42",
+          "tertiary": "#875760", "on-tertiary": "#ffffff",
+          "background": "#fffcf7", "surface": "#fffcf7",
+          "surface-container-lowest": "#ffffff", "surface-container-low": "#fcf9f4",
+          "surface-container": "#f6f3ee", "surface-container-high": "#f0eee8",
+          "surface-container-highest": "#eae8e2", "on-surface": "#383835",
+          "on-surface-variant": "#656461", "on-background": "#383835",
+          "outline": "#82807c", "outline-variant": "#bbb9b4",
+          "inverse-surface": "#0e0e0c", "on-secondary-fixed-variant": "#29664c"
+        },
+        "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        "fontFamily": { "headline": ["Plus Jakarta Sans"], "body": ["Plus Jakarta Sans"], "label": ["Plus Jakarta Sans"] }
+      }
+    }
+  }
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fffcf7; color: #383835; }
+</style>
+</head>
+<body class="bg-background text-on-surface">
+
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl transition-all duration-300">
+  <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+    <a href="/" class="flex-shrink-0">
+      <img alt="Anamour Natural" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0uilBbYWocVNwwoxdA3H42MfsvYLpZ1pnKugYtmx5wbbOqrO97mk2LyCsCNkZUDtpdQCLyWc-QPSA0VN6712VkAra7QpA3xVVDdR9BrrNEPkgpuOZeUiNlTsdHrRcSb-t_E5HH6a7N6JBGWcTGbHucJKIStJEqlhiVsI6NcOI9mCakAjOy2kMtazsbFVG5FNtD5G3zWwA_AREKTJSk6fLmTsweKh5PgUrS_3quXkJRKo96b10WDwG0gndCs1jxX9tK4MGrz6CkVIRfQ"/>
+    </a>
+    <div class="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] text-xs tracking-widest uppercase font-semibold">
+      <a class="text-zinc-600 hover:text-pink-500 transition-all duration-300" href="/">Home</a>
+      <a class="text-zinc-600 hover:text-pink-500 transition-all duration-300" href="/products/">Products</a>
+      <div class="relative group">
+        <button class="text-pink-600 border-b-2 border-pink-600 pb-0.5 flex items-center gap-0.5 text-xs tracking-widest uppercase font-semibold">
+          Corporate <span class="material-symbols-outlined" style="font-size:14px;vertical-align:-2px;">expand_more</span>
+        </button>
+        <div class="absolute top-full -left-2 mt-3 w-52 bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <a href="/about/" class="block px-4 py-3 rounded-xl text-xs font-semibold tracking-wide uppercase text-pink-600 bg-pink-50">About Us</a>
+          <a href="/privacy-policy/" class="block px-4 py-3 rounded-xl text-xs font-semibold tracking-wide uppercase text-zinc-600 hover:bg-pink-50 hover:text-pink-600 transition-colors">Privacy Policy</a>
+          <a href="/cookie-policy/" class="block px-4 py-3 rounded-xl text-xs font-semibold tracking-wide uppercase text-zinc-600 hover:bg-pink-50 hover:text-pink-600 transition-colors">Cookie Policy</a>
+        </div>
+      </div>
+      <a class="text-zinc-600 hover:text-pink-500 transition-all duration-300" href="/#contact">Contact</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="/#contact" class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-full font-semibold shadow-lg hover:opacity-90 active:scale-95 transition-all text-xs tracking-wider uppercase">
+        Sipariş Ver
+      </a>
+      <button class="md:hidden p-2 text-zinc-600" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+  <div class="hidden md:hidden bg-white/95 backdrop-blur-xl border-t border-zinc-100" id="mobile-menu">
+    <div class="px-8 py-6 flex flex-col gap-1 max-w-7xl mx-auto">
+      <a class="py-3 px-4 rounded-xl text-xs font-semibold tracking-widest uppercase text-zinc-600 hover:bg-pink-50 hover:text-pink-600 transition-colors" href="/">Home</a>
+      <a class="py-3 px-4 rounded-xl text-xs font-semibold tracking-widest uppercase text-zinc-600 hover:bg-pink-50 hover:text-pink-600 transition-colors" href="/products/">Products</a>
+      <div>
+        <button class="w-full text-left py-3 px-4 rounded-xl text-xs font-semibold tracking-widest uppercase text-pink-600 bg-pink-50 flex items-center justify-between" onclick="document.getElementById('corp-submenu').classList.toggle('hidden')">
+          Corporate <span class="material-symbols-outlined" style="font-size:16px;">expand_more</span>
+        </button>
+        <div class="pl-4" id="corp-submenu">
+          <a class="block py-2 px-4 rounded-xl text-xs font-semibold tracking-wide uppercase text-pink-600" href="/about/">About Us</a>
+          <a class="block py-2 px-4 rounded-xl text-xs font-semibold tracking-wide uppercase text-zinc-500 hover:text-pink-600 transition-colors" href="/privacy-policy/">Privacy Policy</a>
+          <a class="block py-2 px-4 rounded-xl text-xs font-semibold tracking-wide uppercase text-zinc-500 hover:text-pink-600 transition-colors" href="/cookie-policy/">Cookie Policy</a>
+        </div>
+      </div>
+      <a class="py-3 px-4 rounded-xl text-xs font-semibold tracking-widest uppercase text-zinc-600 hover:bg-pink-50 hover:text-pink-600 transition-colors" href="/#contact">Contact</a>
+      <div class="pt-4 mt-2 border-t border-zinc-100">
+        <a href="/#contact" class="block w-full text-center bg-gradient-to-br from-primary to-primary-container text-on-primary py-3 rounded-full font-semibold hover:opacity-90 transition-all text-xs tracking-wider uppercase">Sipariş Ver</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="pt-24 pb-20">
+  <!-- Hero -->
+  <section class="max-w-7xl mx-auto px-8 py-20">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div class="space-y-6">
+        <span class="text-primary font-bold tracking-[0.2em] uppercase text-sm">Our Story</span>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-none">About <span class="text-secondary italic">Anamour</span></h1>
+        <p class="text-on-surface-variant text-xl leading-relaxed font-medium">Women's craftsmanship meets the purest form of nature — creating flavors that inspire tables around the world.</p>
+      </div>
+      <div class="rounded-[3rem] overflow-hidden shadow-2xl aspect-square">
+        <img alt="Anamour Natural sun-drying process" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf2IDsHgCSypoxBLL5cccyM5v4yZBrBqxnXV8w7jedsm3nY1YS2VgYOoEVzP-J3chbYbA4y50qDFEd2DKAiWlex79gM2Mhi1HefJyEfx8xdOMHBFIpw1vRYjs4oESfkNJmss8U3uKS8M5R4SGZNCYvIX4aUopN1KkmIasFJLXzH9xinHSXtZUCbvFHmhDaFJfYEpblJd9KaqtmM1caniY5IfJNT4Adlbspto4xUFlcdVsXKmQMs4Czug_AgdSqRdlq0koCDHqdBs54"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story Text -->
+  <section class="bg-surface-container-low py-20 px-8">
+    <div class="max-w-4xl mx-auto space-y-8">
+      <p class="text-xl leading-relaxed text-on-surface font-medium">
+        We set out with the dream of producing inspiring flavors for tables by bringing together the purest form of nature with women's craftsmanship. Fruits prepared with the right methods, of the highest quality, carefully selected, and processed in a way that preserves their nutritional value… All within a production model where women are at the heart of the process.
+      </p>
+      <p class="text-xl leading-relaxed text-on-surface-variant font-medium">
+        Over the years, we have built a strong team of experts in fruit drying, most of whom are women, passionate about their work. They are masters of both traditional craftsmanship and modern technology, carefully selecting and delicately drying each fruit.
+      </p>
+      <p class="text-xl leading-relaxed text-on-surface-variant font-medium">
+        We dry fruits sourced from our fertile lands in hygienic, closed systems while preserving their nutritional value, delivering their flavor to tables all year round. Today, we continue with the same entrepreneurial spirit, proudly delivering our products to all corners of the world while supporting women's labor and local agriculture.
+      </p>
+    </div>
+  </section>
+
+  <!-- Values Grid -->
+  <section class="max-w-7xl mx-auto px-8 py-20">
+    <h2 class="text-4xl font-extrabold tracking-tight mb-12 text-center">Our <span class="text-primary">Values</span></h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-surface-container rounded-[2rem] p-10 flex flex-col gap-4">
+        <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings:'FILL' 1;">favorite</span>
+        </div>
+        <h3 class="text-2xl font-bold">Women at the Heart</h3>
+        <p class="text-on-surface-variant leading-relaxed">A production model built on women's craftsmanship — blending traditional expertise with modern precision at every step.</p>
+      </div>
+      <div class="bg-secondary text-white rounded-[2rem] p-10 flex flex-col gap-4">
+        <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center">
+          <span class="material-symbols-outlined text-white text-2xl" style="font-variation-settings:'FILL' 1;">nest_eco_leaf</span>
+        </div>
+        <h3 class="text-2xl font-bold">Nature First</h3>
+        <p class="text-white/80 leading-relaxed">Zero additives, no sulfites, no added sugar. Just fruit, sunlight, and mountain air — exactly as nature intended.</p>
+      </div>
+      <div class="bg-surface-container rounded-[2rem] p-10 flex flex-col gap-4">
+        <div class="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center">
+          <span class="material-symbols-outlined text-secondary text-2xl" style="font-variation-settings:'FILL' 1;">public</span>
+        </div>
+        <h3 class="text-2xl font-bold">Global Reach</h3>
+        <p class="text-on-surface-variant leading-relaxed">From fertile Anatolian highlands to tables around the world — proudly supporting local agriculture and global wellness.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="bg-inverse-surface py-20 px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+      <div>
+        <div class="text-5xl font-extrabold text-primary-container mb-2">100%</div>
+        <div class="text-xs font-bold uppercase tracking-widest text-zinc-400">Natural Process</div>
+      </div>
+      <div>
+        <div class="text-5xl font-extrabold text-primary-container mb-2">0%</div>
+        <div class="text-xs font-bold uppercase tracking-widest text-zinc-400">Additives</div>
+      </div>
+      <div>
+        <div class="text-5xl font-extrabold text-primary-container mb-2">4+</div>
+        <div class="text-xs font-bold uppercase tracking-widest text-zinc-400">Fruit Varieties</div>
+      </div>
+      <div>
+        <div class="text-5xl font-extrabold text-primary-container mb-2">Global</div>
+        <div class="text-xs font-bold uppercase tracking-widest text-zinc-400">Distribution</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#f6f3ee] w-full rounded-t-[3rem] px-8 py-16 flex flex-col items-center gap-8">
+  <a href="/"><img alt="Anamour Natural" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0uilBbYWocVNwwoxdA3H42MfsvYLpZ1pnKugYtmx5wbbOqrO97mk2LyCsCNkZUDtpdQCLyWc-QPSA0VN6712VkAra7QpA3xVVDdR9BrrNEPkgpuOZeUiNlTsdHrRcSb-t_E5HH6a7N6JBGWcTGbHucJKIStJEqlhiVsI6NcOI9mCakAjOy2kMtazsbFVG5FNtD5G3zWwA_AREKTJSk6fLmTsweKh5PgUrS_3quXkJRKo96b10WDwG0gndCs1jxX9tK4MGrz6CkVIRfQ"/></a>
+  <p class="text-zinc-500 font-medium max-w-sm text-center">From the heart of the orchard to your daily ritual. Sustainable, seasonal, and always pure.</p>
+  <div class="pt-8 border-t border-zinc-200 w-full max-w-4xl text-center">
+    <p class="text-on-secondary-fixed-variant text-sm font-medium">© 2024 Anamour Natural. Grown with Intention.</p>
+  </div>
+</footer>
+
+<a class="fixed bottom-8 right-8 z-50 w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center text-white shadow-2xl hover:scale-110 active:scale-95 transition-all" href="https://wa.me/905327998919">
+  <svg fill="currentColor" height="32" viewBox="0 0 24 24" width="32"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.852c1.856 1.084 3.809 1.654 5.783 1.655 5.737 0 10.403-4.666 10.406-10.403.001-2.78-1.082-5.393-3.048-7.36s-4.579-3.05-7.36-3.051c-5.738 0-10.406 4.666-10.409 10.404-.001 1.905.525 3.763 1.522 5.356l-.994 3.63 3.73-.978zm11.567-5.28c-.313-.158-1.854-.915-2.141-1.018-.287-.104-.497-.158-.707.158s-.812 1.018-.994 1.228-.365.237-.678.079c-.313-.158-1.322-.487-2.52-1.555-.93-.83-1.558-1.855-1.74-2.17-.182-.315-.02-.485.137-.642.142-.141.313-.366.47-.55.157-.183.209-.314.313-.524s.052-.393-.026-.55c-.079-.158-.707-1.703-.968-2.333-.254-.614-.512-.531-.707-.541-.183-.009-.391-.011-.599-.011s-.548.078-.836.393c-.287.315-1.096 1.074-1.096 2.62s1.122 3.039 1.279 3.248c.157.21 2.207 3.37 5.348 4.726.748.323 1.332.516 1.787.66.752.239 1.435.205 1.975.125.602-.09 1.854-.758 2.115-1.468.261-.709.261-1.314.183-1.442-.079-.128-.288-.204-.601-.362z"/></svg>
+</a>
+
+</body>
+</html>
