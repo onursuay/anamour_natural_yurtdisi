@@ -106,6 +106,19 @@
     60%, 100% { transform: translateX(120%); }
   }
 </style>
+<!-- Google tag (gtag.js) - Anamour Natural Export -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LETWP9PMT0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LETWP9PMT0');
+  document.addEventListener('submit', function(e){
+    if (e.target && e.target.tagName === 'FORM') {
+      gtag('event', 'generate_lead', { form_location: location.pathname });
+    }
+  }, true);
+</script>
 </head>
 <body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
 
